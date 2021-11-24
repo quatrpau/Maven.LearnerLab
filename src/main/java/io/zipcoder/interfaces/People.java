@@ -29,11 +29,7 @@ public class People implements Iterable<Person>{
          return false;
     }
     public void remove(Person id){
-        for(Person p: personList){
-            if(p.equals(id)){
-                this.personList.remove(p);
-            }
-        }
+        this.personList.remove(id);
     }
     public void removeAll(){
         this.personList.clear();

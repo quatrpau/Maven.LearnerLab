@@ -11,16 +11,16 @@ public class TestPeople {
     public void before(){
         p = new People();
         o = new Person(1,"2");
+        p.add(o);
     }
     @Test
     public void testAdd(){
         before();
-        p.add(o);
         Assert.assertTrue(p.contains(o));
     }
     @Test
     public void testRemove(){
-        testAdd();
+        before();
         p.remove(o);
         Assert.assertFalse(p.contains(o));
     }
