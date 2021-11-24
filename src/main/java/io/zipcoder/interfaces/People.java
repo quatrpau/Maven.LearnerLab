@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class People implements Iterable<Person>{
-    private List<Person> personList;
+    private final List<Person> personList;
     public People(){
         personList = new ArrayList<Person>();
     }
@@ -44,9 +44,5 @@ public class People implements Iterable<Person>{
 
     public Person[] toArray(){
         return this.personList.toArray(new Person[0]);
-    }
-    //testing
-    public List<Person> list(){
-        return this.personList;
     }
 }

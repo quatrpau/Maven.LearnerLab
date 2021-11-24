@@ -1,6 +1,5 @@
 package io.zipcoder.interfaces;
 
-import java.util.Objects;
 
 public class Person {
     private final long id;
