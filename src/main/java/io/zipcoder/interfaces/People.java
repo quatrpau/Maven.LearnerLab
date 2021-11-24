@@ -20,16 +20,16 @@ public class People implements Iterable<Person>{
         }
         return null;
     }
-    public boolean contains(Person id){
+    public boolean contains(Person o){
         for(Person p: personList){
-            if(p.equals(id)){
+            if(p.equals(o)){
                 return true;
             }
         }
-         return false;
+        return false;
     }
-    public void remove(Person id){
-        this.personList.remove(id);
+    public void remove(Person o){
+        this.personList.remove(o);
     }
     public void removeAll(){
         this.personList.clear();
@@ -44,5 +44,9 @@ public class People implements Iterable<Person>{
 
     public Person[] toArray(){
         return this.personList.toArray(new Person[0]);
+    }
+    //testing
+    public List<Person> list(){
+        return this.personList;
     }
 }
