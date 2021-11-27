@@ -6,7 +6,7 @@ import java.util.Map;
 public class ZipCodeWilmington {
     private final Students students = Students.getInstance();
     private final Instructors instructors = Instructors.getInstance();
-    public void hostLecture(Teacher teacher, double numberOfHours){
+    public void hostLecture(Educator teacher, double numberOfHours){
         teacher.lecture(students.toArray(),numberOfHours);
     }
     public void hostLecture(long id, double numberOfHours){
